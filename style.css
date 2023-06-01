@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root{
+    font-size: 10px;
+    --orange-color: rgb(255, 166, 0);
+    --gray-color: gray;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    width: 350px;
+    background-color: black;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    border-radius: 2.5rem;
+    padding: 10px;
+}
+.container input{
+    height: 100px;
+    font-size: 4.5rem;
+    text-align: right;
+    background-color: black;
+    color: white;
+    border-radius: 2.5rem 2.5rem 0 0;
+    outline: none;
+    border: none;
+}
+.container input::-webkit-outer-spin-button,
+.container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.calContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+.item{
+    background-color: rgb(61, 61, 61);
+    color: white;
+    width: 70px;
+    height: 70px;
+    font-weight: 900;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    margin: 10px 0;
+    user-select: none;
+}
+.item:nth-child(1)
+{
+    background-color: var(--gray-color);
+}
+.item:nth-child(2)
+{
+    background-color: var(--gray-color);
+}
+.item:nth-child(3)
+{
+    background-color: var(--gray-color);
+}
+.item:nth-child(4)
+{
+    background-color: var(--orange-color);
+}
+.item:nth-child(8)
+{
+    background-color: var(--orange-color);
+}
+.item:nth-child(12)
+{
+    background-color: var(--orange-color);
+}
+.item:nth-child(16)
+{
+    background-color: var(--orange-color);
+}
+.item:nth-child(17)
+{
+    grid-column: 1 / span 2;
+    width: 150px;
+    border-radius: 50px ;
+}
